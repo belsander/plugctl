@@ -28,7 +28,7 @@ var WebWidth = "600"
 var WebHeight = "320"
 
 var webHistory = `<html>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.0/dygraph-combined.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.0/dygraph-combined.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<body>
 	<div id="graphdiv" style="width:##WebWidth##px; height:##WebHeight##px;"></div>
@@ -45,9 +45,9 @@ var webHistory = `<html>
 	</html>`
 
 var webStream = `<html>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.0/dygraph-combined.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.0/dygraph-combined.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
 	<body>
 	<div id="graphdiv" style="width:##WebWidth##px; height:##WebHeight##px;"></div>
 	<script type="text/javascript">
