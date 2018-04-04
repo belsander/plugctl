@@ -1,9 +1,9 @@
 [Main]
 ip=192.168.2.107
-port=8000
-csvfile=plug1.csv
+port=8080
+csvfile=/data/plug1.csv
 #webWidth=600
 #webHeight=320
-#credentials=admin:admin
-#daemon
+credentials=admin:admin
+daemon
 
