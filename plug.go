@@ -338,13 +338,13 @@ func (p *plug) daemon() {
 			switch i {
 			case 0:
 				// mAmp/10 -> Amp
-				value = strconv.FormatFloat(temp/10000, 'f', 2, 32)
+				value = strconv.FormatFloat(temp/10000, 'f', 4, 32)
 			// centiWatt -> Watt
 			case 1:
-				value = strconv.FormatFloat(temp/100, 'f', 2, 32)
+				value = strconv.FormatFloat(temp/100, 'f', 3, 32)
 			// mWatt/h -> Watt/h | mVolt -> Volt
 			case 2, 3:
-				value = strconv.FormatFloat(temp/1000, 'f', 2, 32)
+				value = strconv.FormatFloat(temp/1000, 'f', 4, 32)
 			}
 			record = append(record, value)
 			recordcount += 1
