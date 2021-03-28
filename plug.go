@@ -137,15 +137,15 @@ func (p *plug) infofull() string {
 			value = value + " Ampere - "
 			// centiWatt -> Watt
 		case 1:
-			value = strconv.FormatFloat(temp/100, 'f', 3, 32)
+			value = strconv.FormatFloat(temp/100, 'f', 2, 32)
 			value = value + " Watt - "
 			// mWatt/h -> Watt/h
 		case 2:
-			value = strconv.FormatFloat(temp/1000, 'f', 4, 32)
+			value = strconv.FormatFloat(temp/1000, 'f', 3, 32)
 			value = value + " Watt/hour - "
 			// mVolt -> Volt
 		case 3:
-			value = strconv.FormatFloat(temp/1000, 'f', 4, 32)
+			value = strconv.FormatFloat(temp/1000, 'f', 3, 32)
 			value = value + " Volt"
 		}
 		resultStr = resultStr + value
@@ -341,10 +341,10 @@ func (p *plug) daemon() {
 				value = strconv.FormatFloat(temp/10000, 'f', 4, 32)
 			// centiWatt -> Watt
 			case 1:
-				value = strconv.FormatFloat(temp/100, 'f', 3, 32)
+				value = strconv.FormatFloat(temp/100, 'f', 2, 32)
 			// mWatt/h -> Watt/h | mVolt -> Volt
 			case 2, 3:
-				value = strconv.FormatFloat(temp/1000, 'f', 4, 32)
+				value = strconv.FormatFloat(temp/1000, 'f', 3, 32)
 			}
 			record = append(record, value)
 			recordcount += 1
